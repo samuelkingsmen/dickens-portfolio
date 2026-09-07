@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dickens Liyayi | Quantity Surveyor</title>
+
+    <meta
+        name="description"
+        content="Portfolio of Dickens Liyayi, Quantity Surveyor with interests in construction, architectural design and project management."
+    >
+
+    <style>
+
+        /* =========================
+           GENERAL
+        ========================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            background: #0b1120;
+            color: #f8fafc;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 92%;
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.7rem;
+            margin-bottom: 55px;
+        }
+
+        .section-title span {
+            color: #38bdf8;
+        }
+
+
+        /* =========================
+           NAVIGATION
+        ========================== */
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+
+            background: rgba(2, 6, 23, 0.88);
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        nav {
+            min-height: 72px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            color: #38bdf8;
+            font-size: 1.3rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 28px;
+        }
+
+        .nav-links a {
+            color: #e2e8f0;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #38bdf8;
+        }
+
+        .menu-btn {
+            display: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+
+
+        /* =========================
+           HOME / HERO
+        ========================== */
+
+        #home {
+
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+
+            padding-top: 120px;
+
+            /* YOUR BACKGROUND IMAGE */
+
+            background-image:
+
+                linear-gradient(
+                    90deg,
+                    rgba(2, 6, 23, 0.90),
+                    rgba(2, 6, 23, 0.65)
+                ),
+
+                url("images/background.jpg");
+
+            background-size: cover;
+
+            background-position: center;
+
+            background-repeat: no-repeat;
+        }
+
+        .hero {
+
+            display: grid;
+
+            grid-template-columns:
+                1.3fr
+                0.7fr;
+
+            align-items: center;
+
+            gap: 60px;
+        }
+
+        .hero-badge {
+
+            display: inline-block;
+
+            padding: 8px 15px;
+
+            margin-bottom: 20px;
+
+            border: 1px solid #38bdf8;
+
+            border-radius: 30px;
+
+            color: #bae6fd;
+
+            background: rgba(15,23,42,0.55);
+
+            font-size: 0.9rem;
+
+            font-weight: bold;
+        }
+
+        .hero-text h2:first-of-type {
+
+            color: #e2e8f0;
+
+            font-size: 1.3rem;
+
+            margin-bottom: 5px;
+        }
+
+        .hero-text h1 {
+
+            font-size: clamp(3rem, 7vw, 5rem);
+
+            line-height: 1.05;
+
+            margin-bottom: 15px;
+        }
+
+        .hero-text h1 span {
+            color: #38bdf8;
+        }
+
+        .hero-title {
+
+            font-size: 1.6rem;
+
+            color: #ffffff;
+
+            letter-spacing: 1px;
+
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+
+            max-width: 650px;
+
+            color: #dbeafe;
+
+            font-size: 1.05rem;
+
+            margin-bottom: 30px;
+        }
+
+
+        /* BUTTONS */
+
+        .buttons {
+
+            display: flex;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+        }
+
+        .btn {
+
+            display: inline-block;
+
+            padding: 13px 25px;
+
+            border-radius: 8px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+
+            background: #38bdf8;
+
+            color: #082f49;
+        }
+
+        .btn-primary:hover {
+
+            transform: translateY(-3px);
+
+            background: #7dd3fc;
+        }
+
+        .btn-outline {
+
+            border: 2px solid #38bdf8;
+
+            color: #e0f2fe;
+
+            background: rgba(2,6,23,0.3);
+        }
+
+        .btn-outline:hover {
+
+            background: #38bdf8;
+
+            color: #082f49;
+        }
+
+
+        /* =========================
+           PROFILE PHOTO
+        ========================== */
+
+        .hero-image {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+        }
+
+        .profile-frame {
+
+            padding: 8px;
+
+            border-radius: 50%;
+
+            background: linear-gradient(
+                135deg,
+                #38bdf8,
+                #2563eb
+            );
+
+            box-shadow:
+                0 25px 60px
+                rgba(0,0,0,0.5);
+        }
+
+        .profile-photo {
+
+            width: 310px;
+
+            height: 310px;
+
+            object-fit: cover;
+
+            object-position: center top;
+
+            border-radius: 50%;
+
+            border: 4px solid #0f172a;
+        }
+
+
+        /* =========================
+           ABOUT
+        ========================== */
+
+        #about {
+
+            background: #111827;
+        }
+
+        .about-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                1fr
+                1fr;
+
+            gap: 55px;
+
+            align-items: start;
+        }
+
+        .about-text h3 {
+
+            font-size: 1.9rem;
+
+            margin-bottom: 18px;
+        }
+
+        .about-text p {
+
+            color: #cbd5e1;
+
+            margin-bottom: 17px;
+        }
+
+        .about-info {
+
+            display: grid;
+
+            gap: 14px;
+        }
+
+        .info-card {
+
+            background: #1e293b;
+
+            padding: 18px 20px;
+
+            border-radius: 10px;
+
+            border-left:
+                4px solid
+                #38bdf8;
+        }
+
+        .info-card strong {
+
+            color: #38bdf8;
+        }
+
+
+        /* =========================
+           PROFESSIONAL FOCUS
+        ========================== */
+
+        #focus {
+
+            background: #0f172a;
+        }
+
+        .focus-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .focus-card {
+
+            background: #172033;
+
+            padding: 30px;
+
+            border-radius: 14px;
+
+            border:
+                1px solid
+                #263449;
+
+            transition: 0.3s;
+        }
+
+        .focus-card:hover {
+
+            transform: translateY(-7px);
+
+            border-color: #38bdf8;
+        }
+
+        .focus-icon {
+
+            font-size: 2.5rem;
+
+            margin-bottom: 15px;
+        }
+
+        .focus-card h3 {
+
+            margin-bottom: 10px;
+        }
+
+        .focus-card p {
+
+            color: #94a3b8;
+        }
+
+
+        /* =========================
+           SKILLS
+        ========================== */
+
+        #skills {
+
+            background: #111827;
+        }
+
+        .skills-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 22px;
+        }
+
+        .skill-card {
+
+            background: #1e293b;
+
+            padding: 30px 22px;
+
+            text-align: center;
+
+            border-radius: 12px;
+
+            border:
+                1px solid
+                #263449;
+
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+
+            transform: translateY(-7px);
+
+            border-color: #38bdf8;
+        }
+
+        .skill-icon {
+
+            font-size: 2.5rem;
+
+            margin-bottom: 15px;
+        }
+
+        .skill-card h3 {
+
+            margin-bottom: 10px;
+        }
+
+        .skill-card p {
+
+            color: #94a3b8;
+        }
+
+
+        /* =========================
+           PROJECTS
+        ========================== */
+
+        #projects {
+
+            background: #0f172a;
+        }
+
+        .projects-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .project-card {
+
+            background: #1e293b;
+
+            border-radius: 14px;
+
+            overflow: hidden;
+
+            border:
+                1px solid
+                #263449;
+
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+
+            transform: translateY(-7px);
+
+            border-color: #38bdf8;
+        }
+
+        .project-image {
+
+            height: 190px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            font-size: 3.5rem;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #0ea5e9,
+                    #2563eb
+                );
+        }
+
+        .project-content {
+
+            padding: 25px;
+        }
+
+        .project-content h3 {
+
+            margin-bottom: 10px;
+        }
+
+        .project-content p {
+
+            color: #94a3b8;
+
+            margin-bottom: 20px;
+        }
+
+        .project-link {
+
+            color: #38bdf8;
+
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================== */
+
+        #contact {
+
+            background: #111827;
+        }
+
+        .contact-layout {
+
+            display: grid;
+
+            grid-template-columns:
+                0.8fr
+                1.2fr;
+
+            gap: 50px;
+        }
+
+        .contact-intro h3 {
+
+            font-size: 1.9rem;
+
+            margin-bottom: 15px;
+        }
+
+        .contact-intro p {
+
+            color: #cbd5e1;
+
+            margin-bottom: 25px;
+        }
+
+        .contact-detail {
+
+            background: #1e293b;
+
+            padding: 17px;
+
+            border-radius: 9px;
+
+            margin-bottom: 12px;
+        }
+
+        .contact-detail strong {
+
+            display: block;
+
+            color: #38bdf8;
+
+            margin-bottom: 3px;
+        }
+
+        .contact-form {
+
+            display: grid;
+
+            gap: 18px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+
+            width: 100%;
+
+            padding: 15px;
+
+            border:
+                1px solid
+                #334155;
+
+            border-radius: 8px;
+
+            background: #0f172a;
+
+            color: white;
+
+            font-size: 1rem;
+
+            font-family: inherit;
+
+            outline: none;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+
+            border-color: #38bdf8;
+        }
+
+        .contact-form textarea {
+
+            min-height: 160px;
+
+            resize: vertical;
+        }
+
+        .contact-form button {
+
+            border: none;
+
+            cursor: pointer;
+
+            font-size: 1rem;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+
+            background: #020617;
+
+            text-align: center;
+
+            padding: 32px 0;
+
+            color: #94a3b8;
+        }
+
+        .social-links {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 22px;
+
+            margin-bottom: 15px;
+        }
+
+        .social-links a {
+
+            color: #38bdf8;
+
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media (max-width: 950px) {
+
+            .hero {
+
+                grid-template-columns: 1fr;
+
+                text-align: center;
+            }
+
+            .hero-text p {
+
+                margin-left: auto;
+
+                margin-right: auto;
+            }
+
+            .buttons {
+
+                justify-content: center;
+            }
+
+            .hero-image {
+
+                order: -1;
+            }
+
+            .profile-photo {
+
+                width: 250px;
+
+                height: 250px;
+            }
+
+            .skills-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .projects-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .contact-layout {
+
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        @media (max-width: 768px) {
+
+            .menu-btn {
+
+                display: block;
+            }
+
+            .nav-links {
+
+                position: absolute;
+
+                top: 72px;
+
+                left: 0;
+
+                width: 100%;
+
+                background: #0f172a;
+
+                flex-direction: column;
+
+                align-items: center;
+
+                padding: 25px 0;
+
+                display: none;
+            }
+
+            .nav-links.active {
+
+                display: flex;
+            }
+
+            .about-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+            .focus-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+            section {
+
+                padding: 80px 0;
+            }
+        }
+
+
+        @media (max-width: 550px) {
+
+            .skills-grid,
+            .projects-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+            .profile-photo {
+
+                width: 210px;
+
+                height: 210px;
+            }
+
+            .hero-text h1 {
+
+                font-size: 2.7rem;
+            }
+
+            .section-title {
+
+                font-size: 2.2rem;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header>
+
+        <div class="container">
+
+            <nav>
+
+                <a href="#home" class="logo">
+                    DICKENS LIYAYI
+                </a>
+
+                <div
+                    class="menu-btn"
+                    onclick="toggleMenu()"
+                >
+                    ☰
+                </div>
+
+                <ul
+                    class="nav-links"
+                    id="navLinks"
+                >
+
+                    <li>
+                        <a href="#home">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#focus">
+                            Expertise
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#skills">
+                            Skills
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#projects">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         HOME
+    ========================== -->
+
+    <section id="home">
+
+        <div class="container">
+
+            <div class="hero">
+
+                <div class="hero-text">
+
+                    <div class="hero-badge">
+                        🏗️ Construction • Cost • Project Management
+                    </div>
+
+                    <h2>
+                        Hello, I'm
+                    </h2>
+
+                    <h1>
+                        <span>
+                            Dickens Liyayi
+                        </span>
+                    </h1>
+
+                    <h2 class="hero-title">
+                        THE QUANTITY SURVEYOR
+                    </h2>
+
+                    <p>
+                        I am a Quantity Surveyor with an interest in
+                        construction, architectural design and project
+                        management. I enjoy developing practical
+                        solutions and contributing to successful
+                        construction projects.
+                    </p>
+
+                    <div class="buttons">
+
+                        <a
+                            href="#projects"
+                            class="btn btn-primary"
+                        >
+                            View My Work
+                        </a>
+
+                        <a
+                            href="#contact"
+                            class="btn btn-outline"
+                        >
+                            Contact Me
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- YOUR PROFILE IMAGE -->
+
+                <div class="hero-image">
+
+                    <div class="profile-frame">
+
+                        <img
+                            src="images/profile.jpg.png.png"
+                            alt="Dickens Liyayi profile photo"
+                            class="profile-photo"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section id="about">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                About <span>Me</span>
+            </h2>
+
+            <div class="about-grid">
+
+                <div class="about-text">
+
+                    <h3>
+                        Building ideas into reality
+                    </h3>
+
+                    <p>
+                        I'm a Quantity Surveyor interested in the
+                        construction industry, architectural design
+                        and project management.
+                    </p>
+
+                    <p>
+                        I enjoy learning new technologies, solving
+                        problems and finding practical solutions that
+                        can improve construction and project delivery.
+                    </p>
+
+                    <p>
+                        My professional interests include quantity
+                        surveying, building and construction,
+                        architectural design and project management.
+                    </p>
+
+                </div>
+
+
+                <div class="about-info">
+
+                    <div class="info-card">
+                        <strong>Name</strong><br>
+                        Dickens Liyayi
+                    </div>
+
+                    <div class="info-card">
+                        <strong>Email</strong><br>
+                        dickenstheqs@gmail.com
+                    </div>
+
+                    <div class="info-card">
+                        <strong>Phone</strong><br>
+                        +254 719231707
+                    </div>
+
+                    <div class="info-card">
+                        <strong>Location</strong><br>
+                        Nairobi, Kenya
+                    </div>
+
+                    <div class="info-card">
+                        <strong>Available for</strong><br>
+                        Freelance &amp; Project Management
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROFESSIONAL FOCUS
+    ========================== -->
+
+    <section id="focus">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Professional <span>Focus</span>
+            </h2>
+
+            <div class="focus-grid">
+
+                <div class="focus-card">
+
+                    <div class="focus-icon">
+                        📐
+                    </div>
+
+                    <h3>
+                        Quantity Surveying
+                    </h3>
+
+                    <p>
+                        Construction measurement, cost planning,
+                        documentation and quantity surveying support.
+                    </p>
+
+                </div>
+
+
+                <div class="focus-card">
+
+                    <div class="focus-icon">
+                        🏗️
+                    </div>
+
+                    <h3>
+                        Building &amp; Construction
+                    </h3>
+
+                    <p>
+                        Understanding construction processes,
+                        site activities and practical building
+                        solutions.
+                    </p>
+
+                </div>
+
+
+                <div class="focus-card">
+
+                    <div class="focus-icon">
+                        📋
+                    </div>
+
+                    <h3>
+                        Project Management
+                    </h3>
+
+                    <p>
+                        Planning, coordinating and supporting projects
+                        from the early stages through completion.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SKILLS
+    ========================== -->
+
+    <section id="skills">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                My <span>Skills</span>
+            </h2>
+
+            <div class="skills-grid">
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        📐
+                    </div>
+
+                    <h3>
+                        Quantity Surveying
+                    </h3>
+
+                    <p>
+                        Building measurement, cost planning and
+                        construction project support.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        🏠
+                    </div>
+
+                    <h3>
+                        Architectural Design
+                    </h3>
+
+                    <p>
+                        Developing modern house and building concepts
+                        with practical design solutions.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        📋
+                    </div>
+
+                    <h3>
+                        Project Management
+                    </h3>
+
+                    <p>
+                        Managing and coordinating projects from
+                        planning through completion.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        🏗️
+                    </div>
+
+                    <h3>
+                        Building &amp; Construction
+                    </h3>
+
+                    <p>
+                        Understanding construction processes and
+                        finding practical solutions to technical
+                        problems.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROJECTS
+    ========================== -->
+
+    <section id="projects">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                My <span>Projects</span>
+            </h2>
+
+            <div class="projects-grid">
+
+
+                <div class="project-card">
+
+                    <div class="project-image">
+                        📐
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+                            Quantity Surveying Project
+                        </h3>
+
+                        <p>
+                            Construction measurement, cost planning
+                            and project documentation.
+                        </p>
+
+                        <a
+                            href="#"
+                            class="project-link"
+                        >
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <div class="project-image">
+                        🏠
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+                            Architectural Design
+                        </h3>
+
+                        <p>
+                            Modern residential and building design
+                            concepts focused on functionality and
+                            appearance.
+                        </p>
+
+                        <a
+                            href="#"
+                            class="project-link"
+                        >
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <div class="project-image">
+                        🏗️
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+                            Construction Project
+                        </h3>
+
+                        <p>
+                            Project planning, coordination and
+                            construction management.
+                        </p>
+
+                        <a
+                            href="#"
+                            class="project-link"
+                        >
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section id="contact">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Contact <span>Me</span>
+            </h2>
+
+            <div class="contact-layout">
+
+
+                <div class="contact-intro">
+
+                    <h3>
+                        Let's connect
+                    </h3>
+
+                    <p>
+                        If you would like to discuss a construction,
+                        quantity surveying, architectural design or
+                        project management opportunity, feel free to
+                        get in touch.
+                    </p>
+
+
+                    <div class="contact-detail">
+
+                        <strong>
+                            Email
+                        </strong>
+
+                        your@email.com
+
+                    </div>
+
+
+                    <div class="contact-detail">
+
+                        <strong>
+                            Phone
+                        </strong>
+
+                        +254 719231707
+
+                    </div>
+
+
+                    <div class="contact-detail">
+
+                        <strong>
+                            Location
+                        </strong>
+
+                        Nairobi, Kenya
+
+                    </div>
+
+                </div>
+
+
+                <form
+                    class="contact-form"
+                    onsubmit="sendMessage(event)"
+                >
+
+                    <input
+                        type="text"
+                        placeholder="Your Name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        placeholder="Your Email"
+                        required
+                    >
+
+                    <textarea
+                        placeholder="Your Message"
+                        required
+                    ></textarea>
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary"
+                    >
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="social-links">
+
+                <a href="#" target="_blank">
+                    TikTok
+                </a>
+
+                <a href="#" target="_blank">
+                    LinkedIn
+                </a>
+
+                <a href="#" target="_blank">
+                    Instagram
+                </a>
+
+            </div>
+
+            <p>
+                © 2026 Dickens Liyayi. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        function toggleMenu() {
+
+            const navLinks =
+                document.getElementById("navLinks");
+
+            navLinks.classList.toggle("active");
+        }
+
+
+        document
+            .querySelectorAll(".nav-links a")
+            .forEach(link => {
+
+                link.addEventListener("click", () => {
+
+                    document
+                        .getElementById("navLinks")
+                        .classList.remove("active");
+
+                });
+
+            });
+
+
+        function sendMessage(event) {
+
+            event.preventDefault();
+
+            alert(
+                "Thank you! Your message has been received."
+            );
+
+            event.target.reset();
+        }
+
+    </script>
+
+</body>
+</html>
